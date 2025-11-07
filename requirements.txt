@@ -1,0 +1,13 @@
+
+fastapi
+uvicorn[standard]
+sqlalchemy>=1.4
+asyncpg
+alembic
+pydantic
+httpx
+python-multipart
+celery[redis]
+redis
+python-dotenv
+databases
