@@ -22,7 +22,7 @@ It supports multi-company access control, asynchronous audio processing, and ana
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/caip.git
+git clone https://github.com/MadhvikChauhan/Call-Analytics-Insights-Platform-CAIP-.git
 cd caip
 ```
 
@@ -114,10 +114,6 @@ docker compose up --build
 | DB connection error | Ensure Postgres URL is correct |
 | Redis unavailable | Start `redis-server` |
 | Module not found | Run from project root |
-
----
-
-
 
 ---
 
