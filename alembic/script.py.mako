@@ -1,0 +1,6 @@
+
+<%
+from alembic import util
+%>
+{
+}
