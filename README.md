@@ -23,7 +23,7 @@ It supports multi-company access control, asynchronous audio processing, and ana
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/MadhvikChauhan/Call-Analytics-Insights-Platform-CAIP-.git
-cd caip
+cd Call-Analytics-Insights-Platform-CAIP-
 ```
 
 ### 2️⃣ Create and Activate Virtual Environment
