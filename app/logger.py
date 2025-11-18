@@ -7,7 +7,7 @@ to both console and a rotating file handler under `logs/`.
 import logging
 import os
 from logging.handlers import RotatingFileHandler
-from .config import settings
+from config import settings
 
 LOG_DIR = os.path.join(os.getcwd(), "logs")
 os.makedirs(LOG_DIR, exist_ok=True)

@@ -1,7 +1,7 @@
 
 """Helpers for saving uploaded files to MEDIA_ROOT organized per company."""
 from pathlib import Path
-from .config import settings
+from config import settings
 from uuid import uuid4
 
 def save_upload_file(file_obj, company_id: int, filename: str) -> str:

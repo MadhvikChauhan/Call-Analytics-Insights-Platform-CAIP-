@@ -1,14 +1,14 @@
 
 """Celery tasks with robust logging and error handling."""
-from .celery_app import celery
+from celery_app import celery
 from time import sleep
 import random, os, json
 from datetime import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from .config import settings
-from .models import CallRecord, CallInsight, SentimentEnum
-from .logger import get_logger
+from config import settings
+from models import CallRecord, CallInsight, SentimentEnum
+from logger import get_logger
 
 logger = get_logger(__name__)
 

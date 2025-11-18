@@ -8,8 +8,8 @@ from fastapi import Header, HTTPException, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from typing import Optional
-from .db import AsyncSessionLocal
-from .models import Company
+from db import AsyncSessionLocal
+from models import Company
 
 async def get_db():
     """Yield an async SQLAlchemy session.

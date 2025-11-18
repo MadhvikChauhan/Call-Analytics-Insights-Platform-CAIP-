@@ -1,7 +1,7 @@
 
 """Celery application configuration for background tasks."""
 from celery import Celery
-from .config import settings
+from config import settings
 
 celery = Celery(
     "caip",

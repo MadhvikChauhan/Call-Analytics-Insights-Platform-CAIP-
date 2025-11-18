@@ -4,13 +4,13 @@ from fastapi import APIRouter, Depends, File, UploadFile, HTTPException, Query
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List, Optional
-from ..deps import get_company_by_api_key, get_db
-from ..models import CallRecord, CallInsight
-from ..schemas import CallCreate, CallRead, InsightRead
-from ..storage import save_upload_file
-from ..tasks import process_call_record as celery_process_call
+from deps import get_company_by_api_key, get_db
+from models import CallRecord, CallInsight
+from schemas import CallCreate, CallRead, InsightRead
+from storage import save_upload_file
+from tasks import process_call_record as celery_process_call
 from datetime import datetime
-from ..logger import get_logger
+from logger import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter()

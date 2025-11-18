@@ -1,6 +1,6 @@
 
 fastapi
-uvicorn[standard]
+uvicorn~=0.18.2
 sqlalchemy>=1.4
 asyncpg
 alembic

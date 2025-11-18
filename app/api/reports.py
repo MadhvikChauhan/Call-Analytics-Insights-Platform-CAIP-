@@ -3,11 +3,11 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from ..deps import get_company_by_api_key, get_db
-from ..models import CallRecord, CallInsight
-from ..tasks import generate_company_report as celery_generate_report
+from deps import get_company_by_api_key, get_db
+from models import CallRecord, CallInsight
+from tasks import generate_company_report as celery_generate_report
 from collections import Counter
-from ..logger import get_logger
+from logger import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter()

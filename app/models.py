@@ -7,7 +7,7 @@ from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, T
 from sqlalchemy.orm import relationship
 from datetime import datetime
 import enum
-from .db import Base
+from db import Base
 
 class SentimentEnum(str, enum.Enum):
     """Sentiment choices for call insights."""
